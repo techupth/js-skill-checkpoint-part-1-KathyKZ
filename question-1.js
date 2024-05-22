@@ -6,3 +6,13 @@ const myTodo = [
   { id: 4, todo: "Wash dishes" },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+myTodo.push({id: 5, todo: "Walk the dog"})
+console.log(myTodo)
+
+function changeId(myTodo[3]) {
+  return myTodo
+}
+const  = new type(arguments);
+console.log(myTodo)
+
+

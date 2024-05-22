@@ -19,3 +19,8 @@ const products = [
 
 const promotionCode = "";
 // เริ่มเขียนโค้ดตรงนี้
+function calculateTotalPrice(products, promotionCode) {
+    const totalPrice = products.reduce((total, products) => {
+      return total + (products.price * products.quantity);
+    }, 0);
+}
