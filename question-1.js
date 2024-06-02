@@ -9,10 +9,15 @@ const myTodo = [
 myTodo.push({id: 5, todo: "Walk the dog"})
 console.log(myTodo)
 
-function changeId(myTodo[3]) {
-  return myTodo
-}
-const  = new type(arguments);
+console.log(myTodo[3].todo)
+
+myTodo[3]["todo"] = "Go to the gym"
+console.log(myTodo[3].todo)
+
+myTodo.pop()
 console.log(myTodo)
 
+//ให้นำข้อมูลใน Object สุดท้ายมาแสดงบนหน้าจอ Console ในรูปแบบ
+//"To-do id: <ค่าของ id>, <ค่าของ todo>" (ห้าม Hard-Code ค่าเข้าไปใน String
 
+console.log(`To-do id: ${myTodo[3].id}, ${myTodo[3].todo}`)

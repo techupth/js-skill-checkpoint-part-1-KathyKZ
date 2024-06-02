@@ -5,17 +5,13 @@ const inventory = [
 ];
 // เริ่มเขียนโค้ดตรงนี้
 
-const uptodateInventory = inventory.reduce(acc, fruit) => {
-  if (fruit.name === "Apple") {
-    acc.push(fruit, quantity: 200);
-    return acc;
-  }
-}
+inventory[0]["quantity"] = 200
+console.log(inventory)
 
 
 inventory.push({ name: "Orange", price: 20, quantity: 300})
 console.log(inventory)
 
-const totalValue = inventory.reduce
+const totalValue = inventory.reduce((acc, cur) => cur["price"] * cur["quantity"] + acc, 0 )
 
 console.log(`มูลค่ารวมของจำนวนสินค้าทั้งหมดในสต็อก ${totalValue} บาท`)
